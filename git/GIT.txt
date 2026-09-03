@@ -1,0 +1,10 @@
+git reset --source 哈希值，删除提交记录
+在github用问号快速查找快捷键
+git reset HEAD~1撤销最近一次提交，保留修改，想把文件放回下方 Changes（未暂存）
+创建工作树
+git worktree add ./task-fixbug -b codex/fix-login
+cd ./task-fixbug，创建工作树
+合并分支的时候要考虑合并冲突，给指令时要留意
+例子：蔬菜->肉类->主食，cherrypick，把蔬菜和主食cherrypick进主干
+用codex完成：回撤，新建分支，处理冲突，
+vscode推荐插件，接入ai

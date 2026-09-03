@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id= "box1">这是一个id选择器</div>
+    <div class="box2">这是一个类选择器</div>
+    <div>这是一个普通标签</div>
+    <button>点击按钮</button>
+    <script>
+       var element_id =document.getElementById('box1');
+       console.log(element_id);
+       // 加上[0]获取集合里第一个元素
+       var element_class= document.getElementsByClassName('box2')[0];
+       console.log(element_class);
+       var element_tag= document.getElementsByTagName('div')[2];
+       console.log(element_tag);
+       
+       element_id.innerHTML ='<a href ="#">id跳转链接</a>';
+       element_class.innerText ='<a href ="#">跳转链接</a>';
+    //    id超文本链接不能改颜色
+       element_class.style.color = 'red';
+       element_class.style.fontSize = '20px';
+       var element_button = document.getElementsByTagName('button')[0];
+       console.log(element_button);
+    //    element_button.onclick = function()
+    // {
+    //     alert('dom按键触发');
+    // }
+    element_button.addEventListener('click',function(){
+        alert('dom按键触发');
+    })
+       
+    </script>
+</body>
+</html>

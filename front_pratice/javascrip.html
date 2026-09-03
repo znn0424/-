@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("内联式2");
+    </script>
+    <script src="/js/my-javascrip.js"></script>
+</head>
+<body>
+    <h1>javascript导入方式</h1>
+    <script>
+        console.log("内联式1");
+        alert("内联式1弹窗");
+        var x;
+        let y =1;
+        const pi =3.14
+        console.log(x,y,pi);
+        let name = '小明';
+        console.log(name);
+        let z =null;
+        console.log(z);
+        let age =15;
+        if(age>=18){
+            console.log("成年人");
+        }else{
+            console.log("未成年人");
+        }
+        let time = 13;
+        if (time>12){
+            alert('下午好');
+        }
+        else if (time<12){
+            alert('上午好')
+        }
+        else{
+            alert('晚上好')
+        }
+        for (i=0;i<=5;i++)
+    {
+        console.log(i)
+    }
+    let j =0;
+    while (j<5){
+        console.log(j)
+        j++
+    }
+    for (z=0;z<=7;z++){
+        if (z==4){
+            continue;
+        }
+        if (z==6){
+            break;
+        }
+        console.log(z)
+    }
+
+
+    </script>
+</body>
+</html>

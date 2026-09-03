@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 给html设置默认字体大小，再用rem放大，使其自适应屏幕 */
+        html{
+            font-size: 10px;
+        }
+        .container{
+            display: flex;
+            height: 40rem;
+            background-color: aqua;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /*如果没有这一条，子元素的宽度会撑开父元素的宽度，导致父元素的高度无法撑开，因此需要换行*/
+            flex-wrap:wrap;
+            /* justify-content: center; */
+            /* align-items: center;      */
+            align-content: center;
+        }
+        .item{
+            width:20rem;
+            font-size: 8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="background-color:yellow";>1</div>
+        <div class="item" style="background-color:red">2</div>
+        <div class="item" style="background-color:green">3</div>
+        <div class="item" style="background-color:white">4</div>
+        <div class="item" style="background-color:yellowgreen">5</div>
+        <div class="item" style="background-color:purple">6</div>
+    </div>
+</body>
+</html>

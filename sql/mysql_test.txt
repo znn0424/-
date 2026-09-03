@@ -1,0 +1,43 @@
+mysql -u root -p
+mysql -h 主机ip -u root -p
+update user set password="" where user=root
+alter "root"@"localhost" identified with mysql_native_password by "";
+flush privileges
+update user set host='%' where user='root' and host = 'localhost'';
+flush previleges
+truncate
+select * from player inner join equip on player.id = equip.player_id
+drop index  index_name  on table_name
+create unique fulltext spatital index index_name on tablename
+alter table table_name modify column name varchar(100)
+alter table table_name rename column name to nick_name
+alter table table_name add column new_column datetime
+alter table table_name drop column new_column
+alter table table_name modify column amount int default 1
+insert into user_info(name,sex,level,email) value (elf(floor(rand()*8)+1,"小明","小李") as name,
+floor(rand()*2)+1 as sex,
+floor(rand()*50)+1 as level,
+insert into user_info (name,sex,level,emai)
+select
+elt(floor(rand()*8))+1,'xiaoli','xiaozhang') as name,
+floor(rand()*2))+1 as sex,
+floor(rand()*50)+1 as level,
+concat(lower(name),floor(rand()*999,'@qq.com') as email,
+limit 20
+
+delimiter //
+create procedure create_random_data()
+begin
+  declare i int defalt 1;
+  insert into user_info (name,sex,level,emai) value(
+    elt(floor(rand()*8))+1,'xiaoli','xiaozhang'),
+    floor(rand()*2))+1,
+    floor(rand()*50)+1,
+    concat(lower(name),floor(rand()*999,'@qq.com'))
+  set i =i+1;
+  end while;
+end //
+delimiter
+update list set price=1,amount=2,total_sum=price*amount where id =1
+total_sum decimal(12,2) generated always as (price*amount) stored comment '总金额'
+id int primary auto_increment comment 'id'

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>java函数</h1>
+    <script>
+    function hello(){
+        console.log("hello");
+    }
+    hello();
+    function hello_value()
+    {
+     return ('hello');
+    }
+    console.log(hello_value());
+    function hello_param(name)
+    {
+        console.log('hello' +name);
+    }
+    hello_param(name="小明");
+    let x ="全局变量";
+    function param(){
+        let y ="局部变量"
+        console.log("这是一个"+x);
+        console.log("这是一个"+y);
+    }
+    param()
+    console.log("这是一个"+x);
+    // console.log("这是一个"+y);局部变量不能直接调用
+
+</script>
+</body>
+
+</html>
